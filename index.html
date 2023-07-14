@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Environmental Impact Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Environment Impact Calculator</h1>
+  
+  <div class="input-section">
+    <h2>Transportation</h2>
+    <label for="car-mileage">Car Mileage (in miles):</label>
+    <input type="number" placeholder="Enter the number" id="car-mileage">
+    
+    <label for="public-transport">Public Transport (in miles):</label>
+    <input type="number" placeholder="Enter the number" id="public-transport">
+  </div>
+  
+  <div class="input-section">
+    <h2>Energy Consumption</h2>
+    <label for="electricity-usage">Electricity Usage (in KWH):</label>
+    <input type="number" placeholder="Enter the number" id="electricity-usage">
+    
+    <label for="gas-usage">Gas Usage (in KWH):</label>
+    <input type="number" placeholder="Enter the number" id="gas-usage">
+  </div>
+  
+  <div class="input-section">
+    <h2>Waste</h2>
+    <label for="waste-generated">Waste Generated (in pounds):</label>
+    <input type="number" placeholder="Enter the number of waste" id="waste-generated">
+  </div>
+  
+  <button id="calculate-btn">Calculate</button>
+  
+  <div id="result-section" class="hidden">
+    <h2>Result</h2>
+    <p>Your carbon footprint is <span id="carbon-footprint"></span> tons CO2e per year.</p>
+    <p>I will give you some tips to reduce your carbon footprint:</p>
+    <ul id="recommendations"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
